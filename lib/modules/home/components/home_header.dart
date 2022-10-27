@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_movie/configs/themes/text_style.dart';
 import 'package:flutter_movie/constants/assets_path.dart';
 
@@ -14,17 +13,17 @@ class HomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 64, left: 24, right: 24),
+      padding: const EdgeInsets.only(top: 64, left: 24, right: 24),
       child: SizedBox(
         height: size.height / 10,
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-          Text(
+          const Text(
             'Find Your Best\nMovie',
             style: TxtStyle.heading1SemiBold,
           ),
           CircleAvatar(
             radius: size.height / 24,
-            backgroundImage: AssetImage(AssetPath.iconProfile),
+            backgroundImage: const AssetImage(AssetPath.iconAvatar),
           )
         ]),
       ),

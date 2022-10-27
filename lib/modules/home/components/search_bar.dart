@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_movie/configs/themes/app_color.dart';
 import 'package:flutter_movie/configs/themes/text_style.dart';
 import 'package:flutter_movie/constants/assets_path.dart';
@@ -16,7 +15,7 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
       child: SizedBox(
         height: size.height / 15,
         child: Row(children: [
@@ -26,7 +25,7 @@ class SearchBar extends StatelessWidget {
             decoration: BoxDecoration(
                 color: DarkTheme.darkBackground,
                 borderRadius: BorderRadius.circular(22)),
-            child: Row(children: [
+            child: Row(children: const [
               Padding(
                 padding: EdgeInsets.only(left: 24, right: 12),
                 child: FaIcon(
@@ -45,11 +44,11 @@ class SearchBar extends StatelessWidget {
             ]),
           )),
           Container(
-            margin: EdgeInsets.only(left: 8),
+            margin: const EdgeInsets.only(left: 8),
             width: size.height / 15,
             height: size.height / 15,
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [
+              gradient: const LinearGradient(colors: [
                 GradientPalette.blue1,
                 GradientPalette.blue2,
               ]),
